@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram, ChevronRight } from 'lucide-react';
 import Button from './Button';
 
 const ContactSection = () => {
@@ -15,32 +15,42 @@ const ContactSection = () => {
                     <div className="lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                         <h2 className="text-3xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
                         <p className="text-gray-600 mb-8 text-lg">
-                            Estamos prontos para te acolher. Entre em contato pelo WhatsApp ou nos acompanhe nas redes sociais.
+                            Estamos prontos para te acolher. Escolha a melhor forma de falar conosco.
                         </p>
 
                         <div className="space-y-4 mb-8">
-                            <Button
-                                className="w-full flex items-center justify-center gap-3 py-4 text-lg"
+                            {/* WhatsApp Card */}
+                            <button
                                 onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                                className="w-full bg-green-50 hover:bg-green-100 border border-green-100 rounded-3xl p-6 flex items-center transition-all duration-300 group text-left"
                             >
-                                <MessageCircle size={24} />
-                                Agendar pelo WhatsApp
-                            </Button>
+                                <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                                    <Phone className="text-white" size={28} />
+                                </div>
+                                <div className="ml-5 flex-grow">
+                                    <h3 className="text-xl font-bold text-gray-800">Agendar via WhatsApp</h3>
+                                    <p className="text-gray-500 text-sm mt-1">Resposta rápida em horário comercial</p>
+                                </div>
+                                <ChevronRight className="text-gray-400 group-hover:text-green-500 transition-colors" size={24} />
+                            </button>
 
-                            <Button
-                                variant="outline"
-                                className="w-full flex items-center justify-center gap-3 py-4 text-lg"
+                            {/* Instagram Card */}
+                            <button
                                 onClick={() => window.open('https://instagram.com', '_blank')}
+                                className="w-full bg-purple-50 hover:bg-purple-100 border border-purple-100 rounded-3xl p-6 flex items-center transition-all duration-300 group text-left"
                             >
-                                <Instagram size={24} />
-                                Siga no Instagram
-                            </Button>
+                                <div className="w-14 h-14 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                                    <Instagram className="text-white" size={28} />
+                                </div>
+                                <div className="ml-5 flex-grow">
+                                    <h3 className="text-xl font-bold text-gray-800">Siga nosso Instagram</h3>
+                                    <p className="text-gray-500 text-sm mt-1">Dicas diárias de saúde mental</p>
+                                </div>
+                                <ChevronRight className="text-gray-400 group-hover:text-purple-500 transition-colors" size={24} />
+                            </button>
                         </div>
 
-                        <div className="space-y-3 border-t border-gray-100 pt-8">
-                            <div className="flex items-center text-gray-600">
-                                <Phone size={20} className="mr-3 text-orange-400" /> (11) 99999-9999
-                            </div>
+                        <div className="border-t border-gray-100 pt-8">
                             <div className="flex items-center text-gray-600">
                                 <Mail size={20} className="mr-3 text-orange-400" /> contato@clinicaaurum.com.br
                             </div>

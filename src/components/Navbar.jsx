@@ -1,57 +1,73 @@
-import React, { useState } from 'react';
-import { Menu, X, Brain } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
 
-const PRIMARY_COLOR = 'rgb(248, 179, 25)';
-
 const Navbar = ({ onNavigate, onScrollTo }) => {
+    const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const location = useLocation();
 
-    const handleScroll = (id) => {
-        onScrollTo(id);
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const navLinks = [
+        { name: 'Início', id: 'hero' },
+        { name: 'Sobre', id: 'about' },
+        { name: 'Serviços', id: 'services' },
+        { name: 'Depoimentos', id: 'testimonials' },
+    ];
+
+    const handleLinkClick = (id) => {
         setIsMobileMenuOpen(false);
+        onScrollTo(id);
     };
 
     return (
-        <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm py-4 transition-all">
-            <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-                {/* Logo */}
-                <div
-                    className="flex items-center gap-2 cursor-pointer"
-                    onClick={() => onNavigate('home')}
-                >
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: PRIMARY_COLOR }}>
-                        <Brain className="text-white" size={24} />
-                    </div>
-                    <span className="text-2xl font-bold text-gray-800 tracking-tight">
-                        Clínica <span style={{ color: PRIMARY_COLOR }}>Aurum</span>
-                    </span>
-                </div>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+            <div className="container mx-auto px-4 flex justify-between items-center">
+                <Link to="/" className="text-2xl font-bold text-gray-800" onClick={() => window.scrollTo(0, 0)}>
+                    Psicóloga<span className="text-[rgb(248,179,25)]">.</span>
+                </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8">
-                    <button onClick={() => handleScroll('about')} className="text-gray-600 hover:text-orange-500 font-medium">A Profissional</button>
-                    <button onClick={() => handleScroll('services')} className="text-gray-600 hover:text-orange-500 font-medium">Tratamentos</button>
-                    <button onClick={() => handleScroll('testimonials')} className="text-gray-600 hover:text-orange-500 font-medium">Depoimentos</button>
-                    <Button onClick={() => handleScroll('contact')}>Fale Conosco</Button>
+                <div className="hidden md:flex items-center space-x-8">
+                    {navLinks.map((link) => (
+                        <button
+                            key={link.name}
+                            onClick={() => handleLinkClick(link.id)}
+                            className="text-gray-600 hover:text-[rgb(248,179,25)] font-medium transition-colors"
+                        >
+                            {link.name}
+                        </button>
+                    ))}
+                    <Button onClick={() => handleLinkClick('contact')}>Agendar Consulta</Button>
                 </div>
 
-                {/* Mobile Menu Toggle */}
-                <button
-                    className="md:hidden text-gray-700"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                >
+                {/* Mobile Menu Button */}
+                <button className="md:hidden text-gray-800" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
 
-            {/* Mobile Menu Dropdown */}
+            {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-4 flex flex-col gap-4 border-t border-gray-100">
-                    <button onClick={() => handleScroll('about')} className="text-left text-lg py-2 text-gray-700">A Profissional</button>
-                    <button onClick={() => handleScroll('services')} className="text-left text-lg py-2 text-gray-700">Tratamentos</button>
-                    <button onClick={() => handleScroll('testimonials')} className="text-left text-lg py-2 text-gray-700">Depoimentos</button>
-                    <Button onClick={() => handleScroll('contact')} className="w-full text-center mt-2">Fale Conosco</Button>
+                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-4 flex flex-col space-y-4">
+                    {navLinks.map((link) => (
+                        <button
+                            key={link.name}
+                            onClick={() => handleLinkClick(link.id)}
+                            className="text-gray-600 hover:text-[rgb(248,179,25)] font-medium text-lg text-left"
+                        >
+                            {link.name}
+                        </button>
+                    ))}
+                    <Button className="w-full" onClick={() => handleLinkClick('contact')}>Agendar Consulta</Button>
                 </div>
             )}
         </nav>

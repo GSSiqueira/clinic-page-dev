@@ -11,7 +11,7 @@ const HeroSection = ({ onScrollTo }) => {
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-1/2 space-y-6">
                         <div className="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-600 font-semibold text-sm">
-                            Bem-vindo à Clínica Aurum
+                            Bem-vindo à Brain Works
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
                             Iluminando caminhos para o seu <span style={{ color: PRIMARY_COLOR }}>bem-estar mental.</span>

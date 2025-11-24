@@ -12,6 +12,10 @@ export default {
           hover: 'rgb(228, 159, 5)',
         },
       },
+      fontFamily: {
+        sans: ['Poppins', 'Axiforma', 'sans-serif'],
+        serif: ['Arvo', 'serif'],
+      },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out',
       },

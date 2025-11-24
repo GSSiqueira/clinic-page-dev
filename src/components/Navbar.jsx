@@ -3,6 +3,8 @@ import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
 
+import brainLogo from '../assets/brain-logo-nobg.png';
+
 const Navbar = ({ onNavigate, onScrollTo }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,8 +33,16 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <Link to="/" className="text-2xl font-bold text-gray-800" onClick={() => window.scrollTo(0, 0)}>
-                    Psicóloga<span className="text-[rgb(248,179,25)]">.</span>
+                <Link
+                    to="/"
+                    className="w-56 h-[5.5rem] lg:w-72 lg:h-28 overflow-hidden relative group block"
+                    onClick={() => window.scrollTo(0, 0)}
+                >
+                    <img
+                        src={brainLogo}
+                        alt="Brain Works Logo"
+                        className="h-full w-auto object-contain object-center md:object-left lg:object-center group-hover:scale-105 transition-transform duration-300"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}

@@ -20,7 +20,7 @@ const HeroSection = ({ onScrollTo }) => {
                             Combinamos tecnologia de ponta em neurociência com acolhimento humano para transformar vidas.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                            <Button onClick={() => onScrollTo('contact')}>Agendar Consulta</Button>
+                            <Button onClick={() => window.open('https://wa.me/5512996729851', '_blank')}>Agendar Consulta</Button>
                             <Button variant="outline" onClick={() => onScrollTo('services')}>Conhecer Tratamentos</Button>
                         </div>
                     </div>

@@ -68,7 +68,7 @@ const ServiceDetail = () => {
                                 <p className="text-gray-600">Dê o primeiro passo para sua transformação.</p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                                <Button className="w-full md:w-auto shadow-lg shadow-orange-200">
+                                <Button className="w-full md:w-auto shadow-lg shadow-orange-200" onClick={() => window.open('https://wa.me/5512996729851', '_blank')}>
                                     Agendar Agora
                                 </Button>
                             </div>

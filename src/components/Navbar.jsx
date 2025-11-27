@@ -56,7 +56,7 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                             {link.name}
                         </button>
                     ))}
-                    <Button onClick={() => handleLinkClick('contact')}>Agendar Consulta</Button>
+                    <Button onClick={() => window.open('https://wa.me/5512996729851', '_blank')}>Agendar Consulta</Button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -77,7 +77,7 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                             {link.name}
                         </button>
                     ))}
-                    <Button className="w-full" onClick={() => handleLinkClick('contact')}>Agendar Consulta</Button>
+                    <Button className="w-full" onClick={() => window.open('https://wa.me/5512996729851', '_blank')}>Agendar Consulta</Button>
                 </div>
             )}
         </nav>

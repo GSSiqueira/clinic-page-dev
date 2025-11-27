@@ -21,7 +21,7 @@ const ContactSection = () => {
                         <div className="space-y-4 mb-8">
                             {/* WhatsApp Card */}
                             <button
-                                onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                                onClick={() => window.open('https://wa.me/5512996729851', '_blank')}
                                 className="w-full bg-green-50 hover:bg-green-100 border border-green-100 rounded-3xl p-6 flex items-center transition-all duration-300 group text-left"
                             >
                                 <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
@@ -36,14 +36,14 @@ const ContactSection = () => {
 
                             {/* Instagram Card */}
                             <button
-                                onClick={() => window.open('https://instagram.com', '_blank')}
+                                onClick={() => window.open('https://www.instagram.com/neuropsihannefailla/', '_blank')}
                                 className="w-full bg-purple-50 hover:bg-purple-100 border border-purple-100 rounded-3xl p-6 flex items-center transition-all duration-300 group text-left"
                             >
                                 <div className="w-14 h-14 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
                                     <Instagram className="text-white" size={28} />
                                 </div>
                                 <div className="ml-5 flex-grow">
-                                    <h3 className="text-xl font-bold text-gray-800">Siga nosso Instagram</h3>
+                                    <h3 className="text-xl font-bold text-gray-800">@neuropsihannefailla </h3>
                                     <p className="text-gray-500 text-sm mt-1">Dicas diárias de saúde mental</p>
                                 </div>
                                 <ChevronRight className="text-gray-400 group-hover:text-purple-500 transition-colors" size={24} />
@@ -52,7 +52,7 @@ const ContactSection = () => {
 
                         <div className="border-t border-gray-100 pt-8">
                             <div className="flex items-center text-gray-600">
-                                <Mail size={20} className="mr-3 text-orange-400" /> contato@clinicaaurum.com.br
+                                <Mail size={20} className="mr-3 text-orange-400" /> <address>hannefailla@gmail.com</address>
                             </div>
                         </div>
                     </div>

@@ -60,7 +60,7 @@ const ContactSection = () => {
                     {/* Map Side */}
                     <div className="lg:w-1/2 bg-gray-100 relative h-[400px] lg:h-auto min-h-[400px]">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975380933167!2d-46.656906!3d-23.561349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.712249469999!2d-45.904906499999996!3d-23.217155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc358016a5b34d%3A0x3123e322015b74a2!2sR.%20Dr.%20Tito%20Roberto%20Liberato%2C%2083%20-%20Parque%20Res.%20Aquarius%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012246-150!5e0!3m2!1sen!2sbr!4v1764284853116!5m2!1sen!2sbr"
                             width="100%"
                             height="100%"
                             style={{ border: 0, minHeight: '100%' }}
@@ -70,7 +70,7 @@ const ContactSection = () => {
                         ></iframe>
                         <div className="absolute bottom-6 left-6 bg-white p-4 rounded-2xl shadow-lg flex items-center max-w-xs">
                             <MapPin size={24} className="text-orange-500 mr-3 flex-shrink-0" />
-                            <p className="text-sm text-gray-700">Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+                            <address className="text-sm text-gray-700">R. Dr. Tito Roberto Liberato, 83 - Parque Res. Aquarius, São José dos Campos - SP</address>
                         </div>
                     </div>
 

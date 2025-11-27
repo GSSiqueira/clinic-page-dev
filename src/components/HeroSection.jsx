@@ -5,8 +5,8 @@ const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
 const HeroSection = ({ onScrollTo }) => {
     return (
-        <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 overflow-hidden">
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-orange-50 rounded-l-[100px] -z-10 hidden md:block"></div>
+        <section className="relative pt-44 pb-20 md:pt-48 md:pb-32 px-4 overflow-hidden">
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-orange-50 rounded-l-[100px] -z-10 hidden lg:block"></div>
             <div className="container mx-auto max-w-6xl">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-1/2 space-y-6">

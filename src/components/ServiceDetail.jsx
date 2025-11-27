@@ -28,9 +28,9 @@ const ServiceDetail = () => {
             <div className="container mx-auto px-4 max-w-4xl">
                 <Link
                     to="/"
-                    className="inline-flex items-center text-gray-500 hover:text-[rgb(248,179,25)] mb-8 transition-colors group"
+                    className="inline-flex items-center px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 bg-white border-2 border-[rgb(248,179,25)] text-[rgb(248,179,25)] mb-8 mt-8"
                 >
-                    <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
+                    <ArrowLeft size={20} className="mr-2" />
                     Voltar para Início
                 </Link>
 

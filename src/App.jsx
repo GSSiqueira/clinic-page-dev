@@ -14,13 +14,25 @@ function App() {
   const navigate = useNavigate();
 
   const scrollToSection = (id) => {
+    const scrollWithOffset = () => {
+      const element = document.getElementById(id);
+      if (element) {
+        const headerOffset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    };
+
     if (location.pathname !== '/') {
       navigate('/');
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      setTimeout(scrollWithOffset, 100);
     } else {
-      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      scrollWithOffset();
     }
   };
 

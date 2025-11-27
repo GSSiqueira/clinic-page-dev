@@ -46,7 +46,7 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center space-x-8">
+                <div className="hidden lg:flex items-center space-x-8">
                     {navLinks.map((link) => (
                         <button
                             key={link.name}
@@ -60,14 +60,14 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden text-gray-800" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                <button className="lg:hidden text-gray-800" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-4 flex flex-col space-y-4">
+                <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-4 flex flex-col space-y-4">
                     {navLinks.map((link) => (
                         <button
                             key={link.name}

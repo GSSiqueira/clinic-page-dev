@@ -51,6 +51,16 @@ const ServiceDetail = () => {
                             <h3 className="text-2xl font-bold text-gray-800 mb-6">Sobre o Tratamento</h3>
                             <p className="leading-relaxed mb-8">{service.fullDesc}</p>
 
+                            {service.image && (
+                                <div className="mb-12 rounded-2xl overflow-hidden shadow-lg">
+                                    <img
+                                        src={service.image}
+                                        alt={service.title}
+                                        className="w-full h-auto object-cover"
+                                    />
+                                </div>
+                            )}
+
                             <h3 className="text-2xl font-bold text-gray-800 mb-6">Principais Benefícios</h3>
                             <div className="grid md:grid-cols-2 gap-6">
                                 {service.benefits.map((benefit, index) => (

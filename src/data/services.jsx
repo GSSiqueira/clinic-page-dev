@@ -1,6 +1,7 @@
 import React from 'react';
 import { Activity, Brain, MessageCircle } from 'lucide-react';
 import mapeamentoImg from '../assets/mapeamento.jpeg';
+import mapeamentoCardImg from '../assets/mapeamento-capa-small.jpeg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
@@ -20,6 +21,7 @@ export const SERVICES_DATA = [
         shortDesc: 'Análise detalhada do funcionamento elétrico do seu cérebro (QEEG).',
         fullDesc: 'O Mapeamento Cerebral, ou Eletroencefalograma Quantitativo (QEEG), permite visualizar as ondas cerebrais em tempo real. Com isso, identificamos padrões de desregulação que podem estar associados a TDAH, insônia, ansiedade e outros transtornos, permitindo um tratamento personalizado.',
         image: mapeamentoImg,
+        cardImage: mapeamentoCardImg,
         benefits: ['Diagnóstico mais preciso', 'Visualização gráfica do funcionamento cerebral', 'Personalização do tratamento', 'Monitoramento da evolução clínica']
     },
     {

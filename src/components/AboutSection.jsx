@@ -13,9 +13,14 @@ const AboutSection = () => {
                     </div>
                     <div className="flex-1 text-center md:text-left">
                         <h2 className="text-3xl font-bold text-gray-800 mb-2">Dra. Hanne Magalhães Failla</h2>
-                        <p className="text-orange-500 font-semibold mb-4">Psicóloga Responsável - CRP 06/12345</p>
-                        <p className="text-gray-700 leading-relaxed">
-                            "Acredito que a união entre a ciência do cérebro e a sensibilidade da escuta é o caminho para uma saúde mental plena. Com especialização em Neuropsicologia pela USP e certificação internacional em Neurofeedback, fundei a Clínica Aurum para oferecer tratamentos que integram corpo, mente e tecnologia."
+                        <p className="text-orange-500 font-semibold mb-4">Psicóloga Responsável - CRP 06/122325</p>
+
+                        <p className="text-gray-700 leading-relaxed text-justify">
+                            Especialista em Psicologia Clínica, Neurociências, Pós graduada em Terapia Cognitiva Comportamental , Psicologia Baseada em evidência, Treinadora cerebral por neurofeedback. Neuroestimulação transcraniana (TDCS / ETCC )  com foco em tratamento cognitivo.
+                        </p>
+
+                        <p className="text-gray-700 leading-relaxed text-justify about-quote italic border-l-4 border-orange-500 pl-4 pr-4 py-2 my-6 bg-white/60 rounded-r-lg">
+                            "Faço o que amo há mais de 13 anos, vejo as mudanças na vida das pessoas através do meu trabalho, e não há nada mais gratificante do que encontrar o seu propósito. Sempre entendi a necessidade de uma conexão verdadeira com meus pacientes. Nos atendimentos, trago dinamismo para as sessões, sendo autêntico, algo que me diferencia. Isso leva você a ser o protagonista da sua própria história, deixando alguns padrões ruins e adquirindo novas formas de lidar com o sofrimento, o que ajuda a conectar com o que você tem de melhor. Sei que decidir iniciar um processo novo na vida sempre gera dúvidas, mas só teremos as respostas se começarmos. Um passo de cada vez, você chega lá!"
                         </p>
                     </div>
                 </div>

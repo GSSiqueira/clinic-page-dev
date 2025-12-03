@@ -16,9 +16,9 @@ export const SERVICES_DATA = [
     },
     {
         id: 'mapeamento',
-        title: 'Mapeamento Cerebral',
+        title: 'Avaliação Psicológica com Mapeamento Cerebral Avançado',
         icon: <Brain size={48} style={{ color: PRIMARY_COLOR }} />,
-        shortDesc: 'Análise detalhada do funcionamento elétrico do seu cérebro (QEEG).',
+        shortDesc: 'Uma Análise detalhada do funcionamento elétrico do seu cérebro (QEEG).',
         fullDesc: 'O Mapeamento Cerebral, ou Eletroencefalograma Quantitativo (QEEG), permite visualizar as ondas cerebrais em tempo real. Com isso, identificamos padrões de desregulação que podem estar associados a TDAH, insônia, ansiedade e outros transtornos, permitindo um tratamento personalizado.',
         image: mapeamentoImg,
         cardImage: mapeamentoCardImg,
@@ -26,9 +26,9 @@ export const SERVICES_DATA = [
     },
     {
         id: 'tcc',
-        title: 'Terapia Cognitivo Comportamental',
+        title: 'Terapia Cognitivo Comportamental (TCC)',
         icon: <MessageCircle size={48} style={{ color: PRIMARY_COLOR }} />,
-        shortDesc: 'Abordagem focada na reestruturação de pensamentos e mudança de comportamentos.',
+        shortDesc: 'Abordagem baseada em evidências e focada na reestruturação de pensamentos e mudança de comportamentos.',
         fullDesc: 'A TCC é uma das abordagens mais eficazes da psicologia moderna. Focamos em identificar e modificar padrões de pensamento disfuncionais que influenciam suas emoções e comportamentos. É uma terapia ativa, estruturada e orientada para o presente e para a resolução de problemas.',
         benefits: ['Foco na solução de problemas', 'Desenvolvimento de autonomia', 'Técnicas práticas para o dia a dia', 'Prevenção de recaídas']
     }

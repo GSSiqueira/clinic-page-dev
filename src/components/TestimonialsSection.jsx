@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import { TESTIMONIALS } from '../data/testimonials';
+import Button from './Button';
 
 const TestimonialsSection = () => {
     return (
@@ -19,6 +20,13 @@ const TestimonialsSection = () => {
                             <p className="font-bold text-gray-900">{t.name}</p>
                         </div>
                     ))}
+                </div>
+                <div className="mt-12 text-center">
+                    <a href="https://www.vittude.com/psicologo/hanne-magalhaes-failla" target="_blank" rel="noopener noreferrer">
+                        <Button variant="primary">
+                            Ver mais avaliações
+                        </Button>
+                    </a>
                 </div>
             </div>
         </section>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Activity, Brain, MessageCircle } from 'lucide-react';
 import mapeamentoImg from '../assets/mapeamento.jpeg';
 import mapeamentoCardImg from '../assets/mapeamento-capa-small.jpeg';
+import neuroestimulacaoImg from '../assets/neuroestimulacao.jpg';
+import neuroestimulacaoCardImg from '../assets/neuroestimulacao_capa.jpg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
@@ -12,6 +14,8 @@ export const SERVICES_DATA = [
         icon: <Activity size={48} style={{ color: PRIMARY_COLOR }} />,
         shortDesc: 'Técnicas avançadas e não invasivas para modulação da atividade cerebral.',
         fullDesc: 'A neuroestimulação utiliza tecnologias modernas como a Estimulação Magnética Transcraniana (EMT) e a Estimulação por Corrente Contínua (tDCS) para tratar condições como depressão, ansiedade e dores crônicas. É um procedimento seguro, não invasivo e com alta eficácia clínica.',
+        image: neuroestimulacaoImg,
+        cardImage: neuroestimulacaoCardImg,
         benefits: ['Tratamento sem medicação excessiva', 'Sessões rápidas e indolores', 'Resultados comprovados cientificamente', 'Melhora da plasticidade cerebral']
     },
     {

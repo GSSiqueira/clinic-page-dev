@@ -22,31 +22,31 @@ const ContactSection = () => {
                             {/* WhatsApp Card */}
                             <button
                                 onClick={() => window.open('https://wa.me/5512996729851', '_blank')}
-                                className="w-full bg-green-50 hover:bg-green-100 border border-green-100 rounded-3xl p-6 flex items-center transition-all duration-300 group text-left"
+                                className="w-full bg-green-50 hover:bg-green-100 border border-green-100 rounded-3xl p-4 sm:p-6 flex items-center transition-all duration-300 group text-left"
                             >
-                                <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
-                                    <Phone className="text-white" size={28} />
+                                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                                    <Phone className="text-white" size={24} />
                                 </div>
-                                <div className="ml-5 flex-grow">
-                                    <h3 className="text-xl font-bold text-gray-800">Agendar via WhatsApp</h3>
-                                    <p className="text-gray-500 text-sm mt-1">Resposta rápida em horário comercial</p>
+                                <div className="ml-3 sm:ml-5 flex-grow min-w-0">
+                                    <h3 className="text-base sm:text-lg font-bold text-gray-800 leading-tight">Agendar via WhatsApp</h3>
+                                    <p className="text-gray-500 text-xs sm:text-sm mt-1 leading-tight">Resposta em horário comercial</p>
                                 </div>
-                                <ChevronRight className="text-gray-400 group-hover:text-green-500 transition-colors" size={24} />
+                                <ChevronRight className="text-gray-400 group-hover:text-green-500 transition-colors flex-shrink-0" size={24} />
                             </button>
 
                             {/* Instagram Card */}
                             <button
                                 onClick={() => window.open('https://www.instagram.com/neuropsihannefailla/', '_blank')}
-                                className="w-full bg-purple-50 hover:bg-purple-100 border border-purple-100 rounded-3xl p-6 flex items-center transition-all duration-300 group text-left"
+                                className="w-full bg-purple-50 hover:bg-purple-100 border border-purple-100 rounded-3xl p-4 sm:p-6 flex items-center transition-all duration-300 group text-left"
                             >
-                                <div className="w-14 h-14 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
-                                    <Instagram className="text-white" size={28} />
+                                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                                    <Instagram className="text-white" size={24} />
                                 </div>
-                                <div className="ml-5 flex-grow">
-                                    <h3 className="text-xl font-bold text-gray-800">@neuropsihannefailla </h3>
-                                    <p className="text-gray-500 text-sm mt-1">Dicas diárias de saúde mental</p>
+                                <div className="ml-3 sm:ml-5 flex-grow min-w-0">
+                                    <h3 className="text-base sm:text-lg font-bold text-gray-800 break-all leading-tight">@neuropsihannefailla</h3>
+                                    <p className="text-gray-500 text-xs sm:text-sm mt-1 leading-tight">Dicas diárias de saúde mental</p>
                                 </div>
-                                <ChevronRight className="text-gray-400 group-hover:text-purple-500 transition-colors" size={24} />
+                                <ChevronRight className="text-gray-400 group-hover:text-purple-500 transition-colors flex-shrink-0" size={24} />
                             </button>
                         </div>
 

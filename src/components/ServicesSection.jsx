@@ -12,11 +12,11 @@ const ServicesSection = () => {
                     <p className="text-gray-600 text-lg">Abordagens modernas e baseadas em evidências para sua saúde mental.</p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-wrap justify-center gap-8">
                     {SERVICES_DATA.map((service) => (
                         <div
                             key={service.id}
-                            className={`relative p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 overflow-hidden h-full flex flex-col min-h-[400px] ${!service.cardImage ? 'bg-white' : ''}`}
+                            className={`relative p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 overflow-hidden h-auto flex flex-col min-h-[400px] w-full md:w-[calc(50%-1rem)] ${!service.cardImage ? 'bg-white' : ''}`}
                         >
                             {service.cardImage && (
                                 <>

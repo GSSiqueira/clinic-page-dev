@@ -1,16 +1,18 @@
 import React from 'react';
-import { Activity, Brain, MessageCircle, Headset } from 'lucide-react';
+import { Activity, Brain, MessageCircle, Headset, Zap } from 'lucide-react';
 import mapeamentoImg from '../assets/mapeamento.jpeg';
 import mapeamentoCardImg from '../assets/mapeamento-capa-small.jpeg';
 import neuroestimulacaoImg from '../assets/neuroestimulacao.jpg';
 import neuroestimulacaoCardImg from '../assets/neuroestimulacao_capa.jpg';
 import realidadeVirtualImg from '../assets/realidade_virtual.jpeg';
 import realidadeVirtualCardImg from '../assets/realidade-virtual-capa.jpeg';
+import neurofeedbackImg from '../assets/neurofeedback.jpg';
+import neurofeedbackCardImg from '../assets/neurofeedback_capa.jpg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
 export const SERVICES_DATA = [
-    
+
     {
         id: 'mapeamento',
         title: 'Avaliação Psicológica com Mapeamento Cerebral Avançado',
@@ -41,6 +43,16 @@ export const SERVICES_DATA = [
         cardImage: realidadeVirtualCardImg,
         backgroundPosition: 'center 40%',
         benefits: ['Ambientes controlados e seguros', 'Reabilitação cognitiva imersiva', 'Maior engajamento do paciente', 'Protocolos personalizados']
+    },
+    {
+        id: 'neurofeedback',
+        title: 'Neurofeedback (Treinamento Cerebral)',
+        icon: <Zap size={48} style={{ color: PRIMARY_COLOR }} />,
+        shortDesc: 'Treinamento cerebral avançado para autorregulação e otimização cognitiva.',
+        fullDesc: 'O Neurofeedback é uma abordagem terapêutica que utiliza tecnologia para monitorar a atividade cerebral em tempo real. Através de estímulos visuais ou auditivos, o cérebro "aprende" a regular suas próprias ondas, promovendo melhorias significativas em quadros de TDAH, ansiedade, insônia e performance cognitiva, sem o uso de medicação.',
+        image: neurofeedbackImg,
+        cardImage: neurofeedbackCardImg,
+        benefits: ['Regulação da ansiedade e estresse', 'Aumento do foco e concentração', 'Melhora na qualidade do sono', 'Tratamento não medicamentoso']
     },
     {
         id: 'tcc',

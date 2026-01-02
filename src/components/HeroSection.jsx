@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-import clinicaImg from '../assets/clinica.png';
+import clinicaImg from '../assets/recepcao_principal.jpg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
@@ -30,7 +30,7 @@ const HeroSection = ({ onScrollTo }) => {
                     <div className="lg:w-1/2 w-full">
                         <div className="relative aspect-[4/3] bg-gray-200 rounded-[3rem] overflow-hidden shadow-2xl">
                             {/* Using a div to represent an image for the mock */}
-                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${clinicaImg})`, backgroundColor: '#f3f4f6' }}>
+                            <div className="w-full h-full bg-cover bg-right" style={{ backgroundImage: `url(${clinicaImg})`, backgroundColor: '#f3f4f6' }}>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
                         </div>

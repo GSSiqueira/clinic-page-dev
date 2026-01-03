@@ -52,7 +52,7 @@ const ContactSection = () => {
 
                         <div className="border-t border-gray-100 pt-8">
                             <div className="flex items-center text-gray-600">
-                                <Mail size={20} className="mr-3 text-orange-400" /> <address>hannefailla@gmail.com</address>
+                                <Mail size={20} className="mr-3 text-orange-600" /> <address>hannefailla@gmail.com</address>
                             </div>
                         </div>
                     </div>

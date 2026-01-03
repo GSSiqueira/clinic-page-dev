@@ -51,7 +51,7 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                         <button
                             key={link.name}
                             onClick={() => handleLinkClick(link.id)}
-                            className="text-gray-600 hover:text-[rgb(248,179,25)] font-medium transition-colors"
+                            className="text-gray-600 hover:text-amber-600 font-medium transition-colors"
                         >
                             {link.name}
                         </button>
@@ -60,7 +60,11 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="lg:hidden text-gray-800" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                <button
+                    className="lg:hidden text-gray-800"
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label="Alternar menu de navegação"
+                >
                     {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>
@@ -72,7 +76,7 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                         <button
                             key={link.name}
                             onClick={() => handleLinkClick(link.id)}
-                            className="text-gray-600 hover:text-[rgb(248,179,25)] font-medium text-lg text-left"
+                            className="text-gray-600 hover:text-amber-600 font-medium text-lg text-left"
                         >
                             {link.name}
                         </button>

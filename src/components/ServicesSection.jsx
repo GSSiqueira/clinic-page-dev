@@ -45,7 +45,8 @@ const ServicesSection = () => {
                                 </p>
                                 <Link
                                     to={`/servicos/${service.id}`}
-                                    className="inline-flex items-center text-[rgb(248,179,25)] font-semibold hover:gap-2 transition-all mt-auto"
+                                    className="inline-flex items-center text-amber-600 font-semibold hover:gap-2 transition-all mt-auto"
+                                    aria-label={`Saiba mais sobre ${service.title}`}
                                 >
                                     Saiba mais <ArrowRight size={20} className="ml-2" />
                                 </Link>

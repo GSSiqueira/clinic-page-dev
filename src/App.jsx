@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
@@ -7,8 +7,10 @@ import ServicesSection from './components/ServicesSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import ServiceDetail from './components/ServiceDetail';
+// import ServiceDetail from './components/ServiceDetail';
 import ScrollToTop from './components/ScrollToTop';
+
+const ServiceDetail = lazy(() => import('./components/ServiceDetail'));
 
 function App() {
   const location = useLocation();
@@ -67,7 +69,11 @@ function App() {
               <ContactSection />
             </>
           } />
-          <Route path="/servicos/:id" element={<ServiceDetail onBack={() => handleNavigate('/')} />} />
+          <Route path="/servicos/:id" element={
+            <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-gray-500">Carregando...</div>}>
+              <ServiceDetail onBack={() => handleNavigate('/')} />
+            </Suspense>
+          } />
         </Routes>
       </main>
 

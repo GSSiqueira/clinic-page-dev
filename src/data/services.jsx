@@ -8,6 +8,8 @@ import realidadeVirtualImg from '../assets/realidade_virtual.jpeg';
 import realidadeVirtualCardImg from '../assets/realidade-virtual-capa.jpeg';
 import neurofeedbackImg from '../assets/neurofeedback.jpg';
 import neurofeedbackCardImg from '../assets/neurofeedback_capa.jpg';
+import nervoVagoImg from '../assets/nervo_vago2.jpg';
+import nervoVagoCardImg from '../assets/nervo_vago_capa.jpg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
@@ -53,6 +55,16 @@ export const SERVICES_DATA = [
         image: neurofeedbackImg,
         cardImage: neurofeedbackCardImg,
         benefits: ['Regulação da ansiedade e estresse', 'Aumento do foco e concentração', 'Melhora na qualidade do sono', 'Tratamento não medicamentoso']
+    },
+    {
+        id: 'estimulacao-nervo-vago',
+        title: 'Estimulação do Nervo Vago',
+        icon: <Activity size={48} style={{ color: PRIMARY_COLOR }} />,
+        shortDesc: 'Terapia neuromodulatória para redução de ansiedade e inflamação sistêmica.',
+        fullDesc: 'A Estimulação do Nervo Vago (VNS) é uma técnica não invasiva que ativa o sistema parassimpático através de dispositivos auriculares específicos. Este "nervo calmante" do corpo ajuda a regular o estresse, reduzir a ansiedade, melhorar o humor e combater processos inflamatórios, promovendo um equilíbrio profundo entre mente e corpo.',
+        image: nervoVagoImg,
+        cardImage: nervoVagoCardImg,
+        benefits: ['Redução significativa da ansiedade', 'Ação anti-inflamatória sistêmica', 'Melhora da qualidade do sono', 'Equilíbrio do sistema nervos autônomo']
     },
     {
         id: 'tcc',

@@ -43,7 +43,7 @@ export const SERVICES_DATA = [
         fullDesc: 'A Realidade Virtual (RV) revoluciona o tratamento psicológico ao permitir a imersão em ambientes controlados. Ideal para reabilitação cognitiva e tratamento de fobias e ansiedade, a RV proporciona experiências seguras que aceleram a neuroplasticidade e potencializam os resultados terapêuticos.',
         image: realidadeVirtualImg,
         cardImage: realidadeVirtualCardImg,
-        backgroundPosition: 'center 40%',
+        backgroundPosition: 'center top',
         benefits: ['Ambientes controlados e seguros', 'Reabilitação cognitiva imersiva', 'Maior engajamento do paciente', 'Protocolos personalizados']
     },
     {

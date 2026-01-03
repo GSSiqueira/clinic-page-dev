@@ -8,8 +8,8 @@ const AboutSection = () => {
         <section id="about" className="py-20 px-4 bg-white">
             <div className="container mx-auto max-w-5xl">
                 <div className="bg-orange-50 rounded-[3rem] p-8 md:p-12 flex flex-col md:flex-row items-center gap-12">
-                    <div className="w-64 h-80 md:w-80 md:h-96 flex-shrink-0 rounded-3xl overflow-hidden border-4 shadow-lg transform hover:scale-105 transition-transform duration-300" style={{ borderColor: PRIMARY_COLOR }}>
-                        <img src={hanneProfileImg} alt="Hanne Magalhães Failla" className="w-full h-full object-cover" />
+                    <div className="w-64 h-[25rem] md:w-80 md:h-[30rem] flex-shrink-0 rounded-3xl overflow-hidden border-4 shadow-lg transform hover:scale-105 transition-transform duration-300" style={{ borderColor: PRIMARY_COLOR }}>
+                        <img src={hanneProfileImg} alt="Hanne Magalhães Failla" className="w-full h-full object-cover object-top" />
                     </div>
                     <div className="flex-1 text-center md:text-left">
                         <h2 className="text-3xl font-bold text-gray-800 mb-2">Dra. Hanne Magalhães Failla</h2>

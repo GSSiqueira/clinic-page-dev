@@ -12,7 +12,14 @@ const ServiceDetail = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [id]);
+        if (service) {
+            document.title = `${service.title} | Brain Works`;
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.setAttribute('content', service.shortDesc);
+            }
+        }
+    }, [id, service]);
 
     if (!service) {
         return (

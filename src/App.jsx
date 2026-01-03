@@ -37,6 +37,16 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    if (location.pathname === '/') {
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute('content', "Clínica Brain Works - Psicologia e Neurociência em São José dos Campos. Especializada em TCC, Neurofeedback e Mapeamento Cerebral com Dra. Hanne Magalhães Failla.");
+      }
+      document.title = "Brain Works - Psicologia e Neurociência";
+    }
+  }, [location]);
+
   const handleNavigate = (path) => {
     navigate(path);
     window.scrollTo(0, 0);

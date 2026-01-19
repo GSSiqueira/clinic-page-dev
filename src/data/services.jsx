@@ -10,6 +10,8 @@ import neurofeedbackImg from '../assets/neurofeedback.jpg';
 import neurofeedbackCardImg from '../assets/neurofeedback_capa.jpg';
 import nervoVagoImg from '../assets/nervo_vago2.jpg';
 import nervoVagoCardImg from '../assets/nervo_vago_capa.jpg';
+import tccImg from '../assets/tcc.jpeg';
+import tccCardImg from '../assets/tcc-capa.jpeg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
@@ -72,6 +74,8 @@ export const SERVICES_DATA = [
         icon: <MessageCircle size={48} style={{ color: PRIMARY_COLOR }} />,
         shortDesc: 'Abordagem baseada em evidências e focada na reestruturação de pensamentos e mudança de comportamentos.',
         fullDesc: 'A TCC é uma das abordagens mais eficazes da psicologia moderna. Focamos em identificar e modificar padrões de pensamento disfuncionais que influenciam suas emoções e comportamentos. É uma terapia ativa, estruturada e orientada para o presente e para a resolução de problemas.',
+        image: tccImg,
+        cardImage: tccCardImg,
         benefits: ['Foco na solução de problemas', 'Desenvolvimento de autonomia', 'Técnicas práticas para o dia a dia', 'Prevenção de recaídas']
     }
 ];

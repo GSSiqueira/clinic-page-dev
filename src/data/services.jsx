@@ -18,7 +18,6 @@ import biofeedbackAppCardImg from '../assets/biofeedback-capa.jpeg';
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
 export const SERVICES_DATA = [
-
     {
         id: 'mapeamento',
         title: 'Avaliação Psicológica com Mapeamento Cerebral Avançado',
@@ -30,6 +29,26 @@ export const SERVICES_DATA = [
         benefits: ['Diagnóstico mais preciso', 'Visualização gráfica do funcionamento cerebral', 'Personalização do tratamento', 'Monitoramento da evolução clínica']
     },
     {
+        id: 'biofeedback-app',
+        title: 'Biofeedback',
+        icon: <Smartphone size={48} style={{ color: PRIMARY_COLOR }} />,
+        shortDesc: 'Monitoramento de níveis de estresse com auxílio de aplicativo complementar para uso domiciliar.',
+        fullDesc: 'O serviço de Biofeedback utiliza sensores e um aplicativo complementar que permite ao paciente monitorar seus níveis de estresse e variabilidade cardíaca no conforto de casa. Essa tecnologia facilita a autoconsciência e o aprendizado de técnicas de relaxamento, integrando dados clínicos com a rotina diária para um tratamento mais efetivo.',
+        image: biofeedbackAppImg,
+        cardImage: biofeedbackAppCardImg,
+        benefits: ['Monitoramento domiciliar contínuo', 'Aplicativo intuitivo para acompanhamento', 'Controle do estresse e ansiedade', 'Visualização de progresso em tempo real']
+    },
+    {
+        id: 'estimulacao-nervo-vago',
+        title: 'Estimulação do Nervo Vago',
+        icon: <Activity size={48} style={{ color: PRIMARY_COLOR }} />,
+        shortDesc: 'Terapia neuromodulatória para redução de ansiedade e inflamação sistêmica.',
+        fullDesc: 'A Estimulação do Nervo Vago (VNS) é uma técnica não invasiva que ativa o sistema parassimpático através de dispositivos auriculares específicos. Este "nervo calmante" do corpo ajuda a regular o estresse, reduzir a ansiedade, melhorar o humor e combater processos inflamatórios, promovendo um equilíbrio profundo entre mente e corpo.',
+        image: nervoVagoImg,
+        cardImage: nervoVagoCardImg,
+        benefits: ['Redução significativa da ansiedade', 'Ação anti-inflamatória sistêmica', 'Melhora da qualidade do sono', 'Equilíbrio do sistema nervos autônomo']
+    },
+    {
         id: 'neuroestimulacao',
         title: 'Neuroestimulação',
         icon: <Activity size={48} style={{ color: PRIMARY_COLOR }} />,
@@ -38,6 +57,16 @@ export const SERVICES_DATA = [
         image: neuroestimulacaoImg,
         cardImage: neuroestimulacaoCardImg,
         benefits: ['Tratamento sem medicação excessiva', 'Sessões rápidas e indolores', 'Resultados comprovados cientificamente', 'Melhora da plasticidade cerebral']
+    },
+    {
+        id: 'neurofeedback',
+        title: 'Neurofeedback (Treinamento Cerebral)',
+        icon: <Zap size={48} style={{ color: PRIMARY_COLOR }} />,
+        shortDesc: 'Treinamento cerebral avançado para autorregulação e otimização cognitiva.',
+        fullDesc: 'O Neurofeedback é uma abordagem terapêutica que utiliza tecnologia para monitorar a atividade cerebral em tempo real. Através de estímulos visuais ou auditivos, o cérebro "aprende" a regular suas próprias ondas, promovendo melhorias significativas em quadros de TDAH, ansiedade, insônia e performance cognitiva, sem o uso de medicação.',
+        image: neurofeedbackImg,
+        cardImage: neurofeedbackCardImg,
+        benefits: ['Regulação da ansiedade e estresse', 'Aumento do foco e concentração', 'Melhora na qualidade do sono', 'Tratamento não medicamentoso']
     },
     {
         id: 'realidade-virtual',
@@ -51,26 +80,6 @@ export const SERVICES_DATA = [
         benefits: ['Ambientes controlados e seguros', 'Reabilitação cognitiva imersiva', 'Maior engajamento do paciente', 'Protocolos personalizados']
     },
     {
-        id: 'neurofeedback',
-        title: 'Neurofeedback (Treinamento Cerebral)',
-        icon: <Zap size={48} style={{ color: PRIMARY_COLOR }} />,
-        shortDesc: 'Treinamento cerebral avançado para autorregulação e otimização cognitiva.',
-        fullDesc: 'O Neurofeedback é uma abordagem terapêutica que utiliza tecnologia para monitorar a atividade cerebral em tempo real. Através de estímulos visuais ou auditivos, o cérebro "aprende" a regular suas próprias ondas, promovendo melhorias significativas em quadros de TDAH, ansiedade, insônia e performance cognitiva, sem o uso de medicação.',
-        image: neurofeedbackImg,
-        cardImage: neurofeedbackCardImg,
-        benefits: ['Regulação da ansiedade e estresse', 'Aumento do foco e concentração', 'Melhora na qualidade do sono', 'Tratamento não medicamentoso']
-    },
-    {
-        id: 'estimulacao-nervo-vago',
-        title: 'Estimulação do Nervo Vago',
-        icon: <Activity size={48} style={{ color: PRIMARY_COLOR }} />,
-        shortDesc: 'Terapia neuromodulatória para redução de ansiedade e inflamação sistêmica.',
-        fullDesc: 'A Estimulação do Nervo Vago (VNS) é uma técnica não invasiva que ativa o sistema parassimpático através de dispositivos auriculares específicos. Este "nervo calmante" do corpo ajuda a regular o estresse, reduzir a ansiedade, melhorar o humor e combater processos inflamatórios, promovendo um equilíbrio profundo entre mente e corpo.',
-        image: nervoVagoImg,
-        cardImage: nervoVagoCardImg,
-        benefits: ['Redução significativa da ansiedade', 'Ação anti-inflamatória sistêmica', 'Melhora da qualidade do sono', 'Equilíbrio do sistema nervos autônomo']
-    },
-    {
         id: 'tcc',
         title: 'Terapia Cognitivo-Comportamental (TCC)',
         icon: <MessageCircle size={48} style={{ color: PRIMARY_COLOR }} />,
@@ -79,15 +88,5 @@ export const SERVICES_DATA = [
         image: tccImg,
         cardImage: tccCardImg,
         benefits: ['Foco na solução de problemas', 'Desenvolvimento de autonomia', 'Técnicas práticas para o dia a dia', 'Prevenção de recaídas']
-    },
-    {
-        id: 'biofeedback-app',
-        title: 'Biofeedback',
-        icon: <Smartphone size={48} style={{ color: PRIMARY_COLOR }} />,
-        shortDesc: 'Monitoramento de níveis de estresse com auxílio de aplicativo complementar para uso domiciliar.',
-        fullDesc: 'O serviço de Biofeedback utiliza sensores e um aplicativo complementar que permite ao paciente monitorar seus níveis de estresse e variabilidade cardíaca no conforto de casa. Essa tecnologia facilita a autoconsciência e o aprendizado de técnicas de relaxamento, integrando dados clínicos com a rotina diária para um tratamento mais efetivo.',
-        image: biofeedbackAppImg,
-        cardImage: biofeedbackAppCardImg,
-        benefits: ['Monitoramento domiciliar contínuo', 'Aplicativo intuitivo para acompanhamento', 'Controle do estresse e ansiedade', 'Visualização de progresso em tempo real']
     }
 ];

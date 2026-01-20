@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Brain, MessageCircle, Headset, Zap } from 'lucide-react';
+import { Activity, Brain, MessageCircle, Headset, Zap, Smartphone } from 'lucide-react';
 import mapeamentoImg from '../assets/mapeamento.jpeg';
 import mapeamentoCardImg from '../assets/mapeamento-capa-small.jpeg';
 import neuroestimulacaoImg from '../assets/neuroestimulacao.jpg';
@@ -12,6 +12,8 @@ import nervoVagoImg from '../assets/nervo_vago2.jpg';
 import nervoVagoCardImg from '../assets/nervo_vago_capa.jpg';
 import tccImg from '../assets/tcc.jpeg';
 import tccCardImg from '../assets/tcc-capa.jpeg';
+import biofeedbackAppImg from '../assets/biofeedback.jpeg';
+import biofeedbackAppCardImg from '../assets/biofeedback-capa.jpeg';
 
 const PRIMARY_COLOR = 'rgb(248, 179, 25)';
 
@@ -77,5 +79,15 @@ export const SERVICES_DATA = [
         image: tccImg,
         cardImage: tccCardImg,
         benefits: ['Foco na solução de problemas', 'Desenvolvimento de autonomia', 'Técnicas práticas para o dia a dia', 'Prevenção de recaídas']
+    },
+    {
+        id: 'biofeedback-app',
+        title: 'Biofeedback',
+        icon: <Smartphone size={48} style={{ color: PRIMARY_COLOR }} />,
+        shortDesc: 'Monitoramento de níveis de estresse com auxílio de aplicativo complementar para uso domiciliar.',
+        fullDesc: 'O serviço de Biofeedback utiliza sensores e um aplicativo complementar que permite ao paciente monitorar seus níveis de estresse e variabilidade cardíaca no conforto de casa. Essa tecnologia facilita a autoconsciência e o aprendizado de técnicas de relaxamento, integrando dados clínicos com a rotina diária para um tratamento mais efetivo.',
+        image: biofeedbackAppImg,
+        cardImage: biofeedbackAppCardImg,
+        benefits: ['Monitoramento domiciliar contínuo', 'Aplicativo intuitivo para acompanhamento', 'Controle do estresse e ansiedade', 'Visualização de progresso em tempo real']
     }
 ];

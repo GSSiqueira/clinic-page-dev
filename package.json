@@ -1,7 +1,7 @@
 {
   "name": "clinic-page-dev",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://gssiqueira.github.io/clinic-page-dev/",
   "type": "module",
   "scripts": {

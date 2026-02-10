@@ -16,7 +16,7 @@ const AboutSection = () => {
                         <p className="text-orange-500 font-semibold mb-4">Psicóloga Responsável - CRP 06/122325</p>
 
                         <p className="text-gray-700 leading-relaxed text-justify">
-                          Especialista em Psicologia Clínica e Neurociências. Pós-graduada em Terapia Cognitivo-Comportamental e Psicologia Baseada em Evidências. Treinadora cerebral com Neurofeedback. Realiza Neuroestimulação Transcraniana (tDCS/ETCC) com foco em tratamento cognitivo.
+                          Neuropsicóloga especialista em Psicologia Clínica e Neurociências. Pós-graduada em Terapia Cognitivo-Comportamental e Psicologia Baseada em Evidências. Treinadora cerebral com Neurofeedback. Realiza Neuroestimulação Transcraniana (tDCS/ETCC) com foco em tratamento cognitivo.
                         </p>
 
                         <p className="text-gray-700 leading-relaxed text-justify about-quote italic border-l-4 border-orange-500 pl-4 pr-4 py-2 my-6 bg-white/60 rounded-r-lg">

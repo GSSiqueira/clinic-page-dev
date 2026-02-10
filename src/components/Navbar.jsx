@@ -31,11 +31,11 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
     };
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3 lg:py-4' : 'bg-transparent py-5 lg:py-6'}`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link
                     to="/"
-                    className="w-56 h-[5.5rem] lg:w-72 lg:h-28 overflow-hidden relative group block"
+                    className="w-44 h-[4.4rem] lg:w-72 lg:h-28 overflow-hidden relative group block"
                     onClick={() => window.scrollTo(0, 0)}
                 >
                     <img
@@ -65,7 +65,7 @@ const Navbar = ({ onNavigate, onScrollTo }) => {
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Alternar menu de navegação"
                 >
-                    {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                    {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
 
